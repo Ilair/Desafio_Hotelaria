@@ -24,7 +24,7 @@ namespace DesafioProjetoHospedagem.Models
             else
             {
                 // TODO: Retornar uma exception caso a capacidade seja menor que o número de hóspedes recebido
-                Console.WriteLine("Não há mais quartos disponíveis!");
+                throw new Exception("Capacidade da suíte excedida!");
             }
         }
 
